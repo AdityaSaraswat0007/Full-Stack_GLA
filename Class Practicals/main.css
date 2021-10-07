@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: bisque;
+}
+
+table {
+  background-color: white;
+  font-size: 1.25em;
+}
+
+caption {
+  background-color: white;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+th {
+  padding: 1em;
+}
+
+td {
+  margin: 0px;
+  width: 10em;
+  padding: 10px;
+}
+
+.td1 {
+  background: linear-gradient(to right, rgb(245, 253, 208), rgb(223, 243, 193));
+}
+
+.td2 {
+  background: linear-gradient(to right, rgb(229, 247, 168), rgb(210, 253, 146));
+}
+
+.td3 {
+  background: linear-gradient(to right, rgb(210, 246, 255), rgb(149, 229, 243));
+}
+
+.td4 {
+  background: linear-gradient(to right, rgb(156, 200, 252), rgb(17, 220, 247));
+}
+
+tr:nth-child(even) {
+  opacity: 60%;
+  font-weight: bolder;
+}
+
+.button {
+  background-color: rgb(57, 12, 182);
+  color: white;
+  border-radius: 0.5em;
+  padding: 10px;
+}
