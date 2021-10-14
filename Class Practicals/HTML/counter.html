@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .counter {
+        color: white;
+        font-weight: bolder;
+        font-size: 4em;
+        text-align: center;
+      }
+
+      .counter_button {
+        display: flex;
+        color: yellow;
+        font-size: 3em;
+        justify-content: center;
+      }
+
+      .button {
+        background-color: yellow;
+        margin-inline: 20px;
+        height: 4em;
+        width: 4em;
+      }
+
+      .count {
+        margin-inline: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="counter">Counter</h1>
+    <div class="counter_button">
+      <button id="minus" class="button" onclick="decreaseCount()">
+        <span style="font-size: 3em">-</span>
+      </button>
+      <div id="count">0</div>
+      <button id="plus" class="button" onclick="increaseCount()">
+        <span style="font-size: 3em">+</span>
+      </button>
+    </div>
+  </body>
+</html>
+
+<script>
+  //   var element = document.getElementById("count");
+  //   var currentno = parseInt(element.innerText);
+  //   console.log(currentno);
+
+  //   var but = document.getElementById("plus");
+  //   but.onclick() = function (increaseCount());
+
+  function increaseCount() {
+    var element = document.getElementById("count");
+    var currentno = parseInt(element.innerText);
+
+    currentno = currentno + 1;
+
+    element.innerHTML = currentno;
+
+    console.log(currentno);
+  }
+
+  function decreaseCount() {
+    var element = document.getElementById("count");
+    var currentno = parseInt(element.innerText);
+    if (currentno > 0) {
+      currentno = currentno - 1;
+    }
+
+    element.innerHTML = currentno;
+
+    console.log(currentno);
+  }
+</script>
